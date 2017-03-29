@@ -1,11 +1,11 @@
 import React from 'react';
-import jss from 'jss';
 import preset from 'jss-preset-default';
+import jss from 'jss';
 import injectSheet from 'react-jss';
 
 jss.setup(preset());
 
-const styles = {
+const sheet = jss.createStyleSheet({
   box: {
     boxSizing: 'border-box',
     position: 'relative',
@@ -17,16 +17,15 @@ const styles = {
     overflow: 'hidden',
     textAlign: 'center',
     color: 'white',
-    '@media only screen and (min-width: 48rem)': {
-      padding: '1rem',
-    },
   },
-};
+});
 
-const Box = ({ classes }) => (
-  <div className={classes.box} />
-);
+class Box extends React.PureComponent {
+  render() {
+    return (
+      <div className={this.props.classes.box} />
+    );
+  }
+}
 
-export { styles };
-
-export default injectSheet(styles)(Box);
+export default injectSheet(sheet)(Box);

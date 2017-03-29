@@ -29,7 +29,7 @@ class HomePage extends React.Component {
         <Container>
           <Row>
             <Col xs={12} sm={3} md={2} lg={1}>
-              <BoxRow />
+              <Box />
             </Col>
             <Col xs={6} sm={6} md={8} lg={10}>
               <BoxRow />

@@ -1,11 +1,11 @@
 import React from 'react';
+import preset from 'jss-preset-default';
+import jss from 'jss';
 import injectSheet from 'react-jss';
 import classNames from 'classnames';
-import { styles as boxStyles } from './Box.jsx';
 
 
 const styles = {
-  box: boxStyles.box,
   boxRow: {
     marginBottom: '1rem',
   },
