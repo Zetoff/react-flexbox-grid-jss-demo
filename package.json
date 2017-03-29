@@ -14,6 +14,7 @@
     "jss": "^6.5.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-flexbox-grid-jss": "0.0.1",
     "react-jss": "^5.4.0",
     "react-mdl": "^1.9.0",
     "react-redux": "^5.0.2",
